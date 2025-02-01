@@ -4,9 +4,9 @@ const redis = require('redis');
 // Configure Redis client
 const redisClient = redis.createClient({
     url: process.env.REDIS_URL || 'redis://127.0.0.1:6379', // Default to local Redis
-    socket: {
+    socket: { 
         tls: false, // No TLS for local development
-        reconnectStrategy: (attempts) => Math.min(attempts * 100, 3000),
+        reconnectStrategy: (attempts) => Math.min(attempts * 100, 3000), 
     },
 });
 

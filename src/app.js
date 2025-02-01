@@ -1,5 +1,6 @@
 require('dotenv').config();
-const { connectDB } = require('./db/connect');
+const { initializeMongoDB } = require('./db/connect'); // ✅ Correct function name
+
 const FAQ = require('./models/FAQ');
 const express = require('express');
 const cors = require('cors');
@@ -7,7 +8,7 @@ const app = express();
 
 
 
-connectDB();
+initializeMongoDB();
 
 //middlewares
 app.use(cors());
