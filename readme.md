@@ -44,18 +44,10 @@ npm run dev
 ## 📖 API Endpoints
 🔹 Fetch all FAQs (with language selection)
 ```http
-Copy
-Edit
+
 GET /api/faqs?lang=hi
 ```
-🔹 Query Parameter:
-
-lang – Selects the language (en, hi, bn). Defaults to English.
-🔹 Response Example:
-
 ```json
-Copy
-Edit
 [
   {
     "question": "What is Node.js?",
