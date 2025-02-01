@@ -17,12 +17,12 @@ A backend service for managing FAQs with multilingual support, caching, and an a
 git clonehttps://github.com/PRATYUSH-MISH/faq-backend-master.git
 cd faq-backend
 ```
-##2️⃣ Install dependencies
+## 2️⃣ Install dependencies
 ```bash
 npm install
 ```
 
-##3️⃣ Set up environment variables (.env)
+## 3️⃣ Set up environment variables (.env)
 Create a .env file in the root directory and add the following:
 ```bash
 PORT=5000
@@ -30,7 +30,7 @@ MONGO_URI=mongodb+srv://your-db-url
 REDIS_URL=redis://localhost:6379
 GOOGLE_GEMINI_API_KEY=your-api-key
 ```
-##4️⃣ Start the server
+## 4️⃣ Start the server
 ```bash
 Copy
 Edit
@@ -41,18 +41,19 @@ or with Nodemon (for development mode):
 ```bash
 npm run dev
 ```
-📖 API Endpoints
+## 📖 API Endpoints
 🔹 Fetch all FAQs (with language selection)
-http
+```http
 Copy
 Edit
 GET /api/faqs?lang=hi
+```
 🔹 Query Parameter:
 
 lang – Selects the language (en, hi, bn). Defaults to English.
 🔹 Response Example:
 
-json
+```json
 Copy
 Edit
 [
@@ -61,13 +62,13 @@ Edit
     "answer": "Node.js is a JavaScript runtime...",
     "language": "hi"
   }
-]
+]```
 🔹 Add a new FAQ (Auto-translates)
 http HOST /api/faqs
 🔹 Request Body (JSON):
 
-json
+```json
 {
   "question": "What is Node.js?",
   "answer": "Node.js is a JavaScript runtime."
-}
+}```
