@@ -5,10 +5,10 @@ A backend service for managing FAQs with multilingual support, caching, and an a
 ## ✨ Features
 - ✅ Multilingual Support – Supports English, Hindi, Bengali, and can be extended to more languages.
 - ✅ WYSIWYG Editor – Rich text formatting for FAQ answers, stored as HTML.
-✅ Caching – Redis stores FAQs for faster responses (1-hour cache).
-✅ Auto-Translation – Uses Google Gemini API to automatically translate questions and answers.
-✅ Admin Panel – Manage FAQs via AdminJS with an intuitive UI.
-✅ Unit Testing – API endpoints are covered with Mocha/Chai for reliability.
+- ✅ Caching – Redis stores FAQs for faster responses (1-hour cache).
+- ✅ Auto-Translation – Uses Google Gemini API to automatically translate questions and answers.
+- ✅ Admin Panel – Manage FAQs via AdminJS with an intuitive UI.
+- ✅ Unit Testing – API endpoints are covered with Mocha/Chai for reliability.
 
 ## 🚀 Installation & Setup
 1️⃣ Clone the repository
