@@ -47,7 +47,6 @@ npm run dev
 
 GET /api/faqs?lang=hi
 ```
-```json
 [
   {
     "question": "What is Node.js?",
@@ -59,8 +58,8 @@ GET /api/faqs?lang=hi
 http HOST /api/faqs
 🔹 Request Body (JSON):
 
-```json
+
 {
   "question": "What is Node.js?",
   "answer": "Node.js is a JavaScript runtime."
-}```
+}
